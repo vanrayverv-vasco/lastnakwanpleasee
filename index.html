@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Van Rayver Villaruz · BSIT Student & Aspiring Web Developer</title>
+  <meta name="description" content="Portfolio of Van Rayver Villaruz, BSIT student and aspiring web developer from Nueva Vizcaya.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- This script tag adds the "js-ready" class ONLY if JS runs.
+       If JS is blocked or fails to load, content stays visible. -->
+  <script>
+    document.documentElement.classList.add('js-ready');
+  </script>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-bracket">[</span>
+        <span class="logo-text">van.dev</span>
+        <span class="logo-bracket">]</span>
+      </a>
+      <nav class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link active"><span class="nav-num">01</span> Home</a>
+        <a href="#about" class="nav-link"><span class="nav-num">02</span> About</a>
+        <a href="#education" class="nav-link"><span class="nav-num">03</span> Education</a>
+        <a href="#projects" class="nav-link"><span class="nav-num">04</span> Projects</a>
+        <a href="#skills" class="nav-link"><span class="nav-num">05</span> Skills</a>
+        <a href="#contact" class="nav-link"><span class="nav-num">06</span> Contact</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section id="home" class="hero">
+      <div class="hero-texture"></div>
+      <div class="hero-orbs">
+        <span class="orb orb-a"></span>
+        <span class="orb orb-b"></span>
+      </div>
+
+      <div class="hero-container">
+        <div class="hero-content">
+          <p class="hero-greeting"><span class="slash">//</span> hello_world</p>
+
+          <h1 class="hero-title">
+            I'm <span class="name-block">Van Rayver</span>
+            <span class="name-block name-block--alt">Villaruz</span>
+          </h1>
+
+          <div class="hero-role">
+            <span class="role-line"></span>
+            <span class="role-text" id="typewriter">BSIT Student</span><span class="caret">_</span>
+          </div>
+
+          <p class="hero-blurb">
+            A BSIT student from Nueva Vizcaya who builds things for the web —
+            learning, breaking, and rebuilding one project at a time.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-solid">
+              <span>See my work</span>
+              <span class="btn-arrow"><i class="fas fa-arrow-right"></i></span>
+            </a>
+            <a href="#contact" class="btn btn-ghost">
+              <i class="far fa-comment-dots"></i>
+              <span>Say hello</span>
+            </a>
+          </div>
+
+          <ul class="hero-meta">
+            <li><span class="meta-k">LOC</span><span class="meta-v">Bayombong, NV</span></li>
+            <li><span class="meta-k">FOCUS</span><span class="meta-v">Web Dev</span></li>
+            <li><span class="meta-k">STATE</span><span class="meta-v meta-live"><span class="live-dot"></span> learning</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-terminal">
+          <div class="terminal">
+            <div class="terminal-bar">
+              <span class="term-dots"><i></i><i></i><i></i></span>
+              <span class="term-title">~/portfolio — bash</span>
+            </div>
+            <div class="terminal-body">
+              <p class="term-line"><span class="term-prompt">$</span> cat developer.json</p>
+              <pre class="term-output"><code>{
+  <span class="tk">"name"</span>: <span class="ts">"Van Rayver Villaruz"</span>,
+  <span class="tk">"role"</span>: <span class="ts">"BSIT Student"</span>,
+  <span class="tk">"stack"</span>: [<span class="ts">"HTML"</span>, <span class="ts">"CSS"</span>, <span class="ts">"JS"</span>],
+  <span class="tk">"learning"</span>: <span class="ts">"PHP + MySQL"</span>,
+  <span class="tk">"motto"</span>: <span class="ts">"keep shipping"</span>
+}</code></pre>
+              <p class="term-line"><span class="term-prompt">$</span> echo $STATUS</p>
+              <p class="term-response">→ growing steadily<span class="caret-inline">_</span></p>
+            </div>
+          </div>
+
+          <span class="term-chip chip-code"><i class="fas fa-code"></i></span>
+          <span class="term-chip chip-bolt"><i class="fas fa-bolt"></i></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section">
+      <div class="container">
+        <header class="sec-head">
+          <span class="sec-index">// 02</span>
+          <h2 class="sec-title">About</h2>
+          <span class="sec-rule"></span>
+        </header>
+
+        <div class="about-layout">
+          <div class="about-lead reveal">
+            <p class="lead-text">
+              I'm a <strong>BSIT student</strong> with a growing obsession for
+              <em>web development</em>, programming, and anything IT.
+            </p>
+          </div>
+
+          <div class="about-details">
+            <div class="about-block reveal">
+              <span class="block-num">01</span>
+              <h3>What I enjoy</h3>
+              <p>
+                Exploring how websites and applications are built from the ground up —
+                and how the right line of code can solve a real-world problem.
+              </p>
+            </div>
+
+            <div class="about-block reveal">
+              <span class="block-num">02</span>
+              <h3>What I'm working on</h3>
+              <p>
+                Strengthening my programming fundamentals and gaining hands-on
+                experience by building useful, user-friendly systems.
+              </p>
+            </div>
+
+            <div class="about-block reveal">
+              <span class="block-num">03</span>
+              <h3>Where I'm headed</h3>
+              <p>
+                Toward becoming a developer who ships polished, thoughtful work —
+                one project at a time.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EDUCATION ===== -->
+    <section id="education" class="section section--tint">
+      <div class="container">
+        <header class="sec-head">
+          <span class="sec-index">// 03</span>
+          <h2 class="sec-title">Education</h2>
+          <span class="sec-rule"></span>
+        </header>
+
+        <ol class="edu-list">
+          <li class="edu-item reveal">
+            <div class="edu-year">Present</div>
+            <div class="edu-body">
+              <div class="edu-top">
+                <h3>Nueva Vizcaya State University</h3>
+                <span class="edu-status edu-status--active">In Progress</span>
+              </div>
+              <p class="edu-degree">Bachelor of Science in Information Technology (BSIT)</p>
+              <p class="edu-note">Programming · Web Development · Databases · Information Systems</p>
+            </div>
+            <div class="edu-icon"><i class="fas fa-university"></i></div>
+          </li>
+
+          <li class="edu-item reveal">
+            <div class="edu-year">Completed</div>
+            <div class="edu-body">
+              <div class="edu-top">
+                <h3>Saint Mary's University</h3>
+                <span class="edu-status">Graduated</span>
+              </div>
+              <p class="edu-degree">High School</p>
+              <p class="edu-note">Foundations in science, math, and computer literacy</p>
+            </div>
+            <div class="edu-icon"><i class="fas fa-school"></i></div>
+          </li>
+
+          <li class="edu-item reveal">
+            <div class="edu-year">Completed</div>
+            <div class="edu-body">
+              <div class="edu-top">
+                <h3>Saint Mary's University</h3>
+                <span class="edu-status">Graduated</span>
+              </div>
+              <p class="edu-degree">Elementary School</p>
+              <p class="edu-note">Where curiosity and a love for learning first began</p>
+            </div>
+            <div class="edu-icon"><i class="fas fa-child"></i></div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="section">
+      <div class="container">
+        <header class="sec-head">
+          <span class="sec-index">// 04</span>
+          <h2 class="sec-title">Projects</h2>
+          <span class="sec-rule"></span>
+        </header>
+
+        <div class="projects-grid" id="projectsGrid">
+
+          <article class="project reveal">
+            <div class="project-corner"></div>
+            <div class="project-head">
+              <span class="project-tag">Featured</span>
+              <span class="project-num">01</span>
+            </div>
+            <div class="project-icon"><i class="fas fa-map-marked-alt"></i></div>
+            <h3 class="project-title">Nueva Vizcaya Tour Guide</h3>
+            <p class="project-desc">
+              A tourism website showcasing destinations and natural attractions
+              across Nueva Vizcaya — built to help visitors discover local spots
+              and promote the province's beauty.
+            </p>
+            <ul class="project-stack">
+              <li><i class="fab fa-html5"></i> HTML</li>
+              <li><i class="fab fa-css3-alt"></i> CSS</li>
+              <li><i class="fab fa-js"></i> JavaScript</li>
+            </ul>
+            <!-- Replace # with your real project URL -->
+            <a href="#" class="project-cta" target="_blank" rel="noopener">
+              <span>View project</span>
+              <i class="fas fa-arrow-up-right-from-square"></i>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="section section--tint">
+      <div class="container">
+        <header class="sec-head">
+          <span class="sec-index">// 05</span>
+          <h2 class="sec-title">Toolbox</h2>
+          <span class="sec-rule"></span>
+        </header>
+
+        <div class="toolbox">
+          <div class="tool reveal">
+            <span class="tool-glyph"><i class="fab fa-html5"></i></span>
+            <span class="tool-name">HTML</span>
+            <span class="tool-role">structure</span>
+          </div>
+          <div class="tool reveal">
+            <span class="tool-glyph"><i class="fab fa-css3-alt"></i></span>
+            <span class="tool-name">CSS</span>
+            <span class="tool-role">styling</span>
+          </div>
+          <div class="tool reveal">
+            <span class="tool-glyph"><i class="fab fa-js"></i></span>
+            <span class="tool-name">JavaScript</span>
+            <span class="tool-role">interactivity</span>
+          </div>
+          <div class="tool reveal">
+            <span class="tool-glyph"><i class="fab fa-php"></i></span>
+            <span class="tool-name">PHP</span>
+            <span class="tool-role">backend</span>
+          </div>
+          <div class="tool reveal">
+            <span class="tool-glyph"><i class="fas fa-database"></i></span>
+            <span class="tool-name">MySQL</span>
+            <span class="tool-role">database</span>
+          </div>
+          <div class="tool reveal">
+            <span class="tool-glyph"><i class="fab fa-git-alt"></i></span>
+            <span class="tool-name">Git</span>
+            <span class="tool-role">versioning</span>
+          </div>
+          <div class="tool reveal">
+            <span class="tool-glyph"><i class="fab fa-github"></i></span>
+            <span class="tool-name">GitHub</span>
+            <span class="tool-role">repo</span>
+          </div>
+        </div>
+
+        <p class="toolbox-note">
+          <i class="fas fa-circle-info"></i>
+          Technologies I'm actively learning and using — not claiming mastery, just momentum.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section">
+      <div class="container">
+        <header class="sec-head">
+          <span class="sec-index">// 06</span>
+          <h2 class="sec-title">Contact</h2>
+          <span class="sec-rule"></span>
+        </header>
+
+        <div class="contact-layout">
+
+          <aside class="contact-card reveal">
+            <h3 class="contact-heading">Let's talk</h3>
+            <p class="contact-sub">
+              Got a project, a question, or just want to say hi? My inbox is open.
+            </p>
+
+            <ul class="contact-list">
+              <li>
+                <span class="ci-icon"><i class="fas fa-envelope"></i></span>
+                <div>
+                  <small>Email</small>
+                  <a href="mailto:vanrayvervillaruz@gmail.com">vanrayvervillaruz@gmail.com</a>
+                </div>
+              </li>
+              <li>
+                <span class="ci-icon"><i class="fas fa-phone"></i></span>
+                <div>
+                  <small>Phone</small>
+                  <a href="tel:+639676219322">0967 621 9322</a>
+                </div>
+              </li>
+              <li>
+                <span class="ci-icon"><i class="fas fa-location-dot"></i></span>
+                <div>
+                  <small>Location</small>
+                  <span>Bayombong, Nueva Vizcaya</span>
+                </div>
+              </li>
+              <li>
+                <span class="ci-icon"><i class="fab fa-facebook-f"></i></span>
+                <div>
+                  <small>Facebook</small>
+                  <a href="https://www.facebook.com/van.rayver.villaruz/" target="_blank" rel="noopener">Van Rayver Villaruz</a>
+                </div>
+              </li>
+              <li>
+                <span class="ci-icon"><i class="fab fa-github"></i></span>
+                <div>
+                  <small>GitHub</small>
+                  <a href="https://github.com/vanrayverv-vasco" target="_blank" rel="noopener">vanrayverv-vasco</a>
+                </div>
+              </li>
+            </ul>
+          </aside>
+
+          <form class="contact-form reveal" id="contactForm" novalidate>
+            <div class="field">
+              <label for="name">Name</label>
+              <input type="text" id="name" placeholder="Your full name" required>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="you@example.com" required>
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" rows="6" placeholder="Write your message here..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-solid btn-block">
+              <span>Send message</span>
+              <span class="btn-arrow"><i class="fas fa-paper-plane"></i></span>
+            </button>
+            <p class="form-feedback" id="formFeedback" role="status"></p>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <a href="#home" class="footer-logo">[ van.dev ]</a>
+        <p>BSIT Student · Aspiring Web Developer</p>
+      </div>
+      <p class="footer-copy">© 2026 Van Rayver Villaruz</p>
+      <div class="footer-social">
+        <a href="https://github.com/vanrayverv-vasco" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.facebook.com/van.rayver.villaruz/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="mailto:vanrayvervillaruz@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
